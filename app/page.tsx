@@ -7,7 +7,7 @@ export default function Home() {
   const { theme, setTheme } = useTheme();
   return (
     <>
-    <div className=' flex justify-center overflow-auto'>
+    <div className=' flex justify-center overflow-auto my-[90px] '>
       <Button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
         switch
       </Button>
