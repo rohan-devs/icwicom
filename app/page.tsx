@@ -1,9 +1,17 @@
-import Image from 'next/image'
+'use client';
 
+import { useTheme } from "next-themes"
+import { Button } from '@/components/ui/button'
 export default function Home() {
+  
+  const { theme, setTheme } = useTheme();
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-     This is the home page for icwicom
-    </main>
+    <>
+    <div className=' flex justify-center overflow-auto'>
+      <Button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+        switch
+      </Button>
+    </div>
+    </>
   )
 }
