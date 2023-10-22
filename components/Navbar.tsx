@@ -20,11 +20,14 @@ export function Navbar() {
   const { theme, setTheme } = useTheme();
   return (
     <>
-      <div className=" flex justify-center m-5 suppressHydrationWarning={true} ">
-        <NavigationMenu>
+      <div className="   justify-center  flex bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 z-30 fixed w-full  ">
+        <div className="md:flex hidden ">
+
+       
+        <NavigationMenu className="m-5">
           <NavigationMenuList>
             <NavigationMenuItem>
-              <Link href="/docs" legacyBehavior passHref>
+              <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Home
                 </NavigationMenuLink>
@@ -90,7 +93,8 @@ export function Navbar() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        <span className=" justify-end">
+        </div>
+        <span className=" justify-end m-5">
           <Button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             className=" rounded-2xl"
