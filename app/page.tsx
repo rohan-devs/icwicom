@@ -8,9 +8,7 @@ export default function Home() {
   return (
     <>
     <div className=' flex justify-center overflow-auto my-[90px] '>
-      <Button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-        switch
-      </Button>
+      
     </div>
     </>
   )
