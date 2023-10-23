@@ -34,9 +34,12 @@ export function Navbar() {
   const { theme, setTheme } = useTheme();
   return (
     <>
-      <div className="   justify-center  flex bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 z-30 top-0 w-full items-center  ">
+    <div className=" flex bg-background w-full fixed top-0 ">
+
+    
+      <div className="   justify-center  flex z-20  w-full items-center    ">
         <div className="md:flex hidden ">
-          <NavigationMenu className="m-5">
+          <NavigationMenu className="m-3">
             <NavigationMenuList>
               <NavigationMenuItem>
                 <Link href="/" legacyBehavior passHref>
@@ -120,8 +123,6 @@ export function Navbar() {
               <Equal />
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-              
-              
               <DropdownMenuItem>Home</DropdownMenuItem>
               <DropdownMenuItem>About us</DropdownMenuItem>
               <DropdownMenuItem>Call for papers</DropdownMenuItem>
@@ -133,6 +134,7 @@ export function Navbar() {
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
+      </div>
       </div>
     </>
   );

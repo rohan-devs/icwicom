@@ -12,7 +12,7 @@ import Image from "next/image";
 function Aboutus() {
   return (
     <>
-      <div className="m-5 md:my-[500px]">
+      <div className="m-5 ">
         <Card className="">
           <CardHeader>
             <CardTitle className=" underline underline-offset-4 text-center text-3xl">
