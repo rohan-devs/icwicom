@@ -25,7 +25,7 @@ function Journey() {
                 The IETE-SF of D.J.Sanghvi organised the second year of ICWiCOM
                 (International conference on wireless communication) held in the
                 institution for the year 2019. The conference was held across
-                two days on the 11th and 12th October. 100+ papers were
+                two days on the 17th,19th 21st. 100+ papers were
                 presented across eight sessions including, for the first time, 2
                 Skype sessions, which was the highlight of this conference.
               </div>
