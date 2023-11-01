@@ -8,12 +8,13 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
-
+import { useRef } from "react";
 function Aboutus() {
+
   return (
     <>
-      <div className="m-5 ">
-        <Card className="">
+      <div className=" m-5 " >
+        <Card >
           <CardHeader>
             <CardTitle className=" underline underline-offset-4 text-center text-3xl">
               About us

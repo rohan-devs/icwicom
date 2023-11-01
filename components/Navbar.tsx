@@ -1,5 +1,5 @@
 "use client";
-
+import { useRef } from "react";
 import * as React from "react";
 import Link from "next/link";
 import { Sun, Moon, Equal } from "lucide-react";
@@ -32,109 +32,125 @@ import {
 
 export function Navbar() {
   const { theme, setTheme } = useTheme();
+  const ref = useRef();
+
   return (
     <>
-    <div className=" flex bg-background w-full fixed top-0 ">
+      <div className=" flex bg-background w-full fixed top-0 z-10 ">
+        <div className="   justify-center  flex z-20  w-full items-center    ">
+          <div className="md:flex hidden ">
+            <NavigationMenu className="m-3">
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <Link href="/" legacyBehavior passHref>
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      Home
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <div id="aboutus">About us</div>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+                <NavigationMenuItem>  
+                  <Link href="/callforpapers" legacyBehavior passHref>
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      Call for papers
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>Dates</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className=" w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[900px]  ">
+                      <ListItem>Important Dates</ListItem>
+                      <ListItem>Schedule</ListItem>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>Registrations</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className=" w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[900px] ">
+                      <ListItem>Registration Details</ListItem>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>Commitees</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className=" w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[900px]  ">
+                      <ListItem>Advisory Commitee</ListItem>
+                      <ListItem>Technical Program Commitee</ListItem>
+                      <ListItem>Organizing Commitee</ListItem>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>Speakers</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className=" w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[900px]  ">
+                      <ListItem>Keynote Speakers</ListItem>
+                      <ListItem>Plenary</ListItem>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
 
-    
-      <div className="   justify-center  flex z-20  w-full items-center    ">
-        <div className="md:flex hidden ">
-          <NavigationMenu className="m-3">
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <Link href="/" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Home
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link href="/aboutus" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    About us
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link href="/callforpapers" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Call for papers
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger>Dates</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className=" w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[900px]  ">
-                    <ListItem>Important Dates</ListItem>
-                    <ListItem>Schedule</ListItem>
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger>Registrations</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className=" w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[900px] ">
-                    <ListItem>Registration Details</ListItem>
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger>Commitees</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className=" w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[900px]  ">
-                    <ListItem>Advisory Commitee</ListItem>
-                    <ListItem>Technical Program Commitee</ListItem>
-                    <ListItem>Organizing Commitee</ListItem>
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger>Speakers</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className=" w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[900px]  ">
-                    <ListItem>Keynote Speakers</ListItem>
-                    <ListItem>Plenary</ListItem>
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <Link href="/contact" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Contact us
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+                <NavigationMenuItem>
+                  <Link href="/contactUs" legacyBehavior passHref>
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      Contact us
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+          </div>
+          <span className=" justify-end m-5">
+            <Button
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className=" rounded-2xl"
+            >
+              {theme === "dark" ? <Sun /> : <Moon />}
+            </Button>
+          </span>
+          <div className=" md:hidden flex justify-end">
+            <DropdownMenu>
+              <DropdownMenuTrigger>
+                <Equal />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem>Home</DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="aboutUs">
+                  About us
+                  
+                  </Link>
+                  </DropdownMenuItem>
+                  
+                <DropdownMenuItem>Call for papers</DropdownMenuItem>
+                <DropdownMenuItem>Dates</DropdownMenuItem>
+                <DropdownMenuItem>Registrations</DropdownMenuItem>
+                <DropdownMenuItem>Commitees</DropdownMenuItem>
+                <DropdownMenuItem>Speakers</DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="contactUs">
+                  Contact us
+                  </Link>
+                  
+                  
+                  </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </div>
         </div>
-        <span className=" justify-end m-5">
-          <Button
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className=" rounded-2xl"
-          >
-            {theme === "dark" ? <Sun /> : <Moon />}
-          </Button>
-        </span>
-        <div className=" md:hidden flex justify-end">
-          <DropdownMenu>
-            <DropdownMenuTrigger>
-              <Equal />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem>Home</DropdownMenuItem>
-              <DropdownMenuItem>About us</DropdownMenuItem>
-              <DropdownMenuItem>Call for papers</DropdownMenuItem>
-              <DropdownMenuItem>Dates</DropdownMenuItem>
-              <DropdownMenuItem>Registrations</DropdownMenuItem>
-              <DropdownMenuItem>Commitees</DropdownMenuItem>
-              <DropdownMenuItem>Speakers</DropdownMenuItem>
-              <DropdownMenuItem>Contact us</DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-        </div>
-      </div>
       </div>
     </>
   );

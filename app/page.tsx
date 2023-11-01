@@ -11,6 +11,7 @@ export default function Home() {
       <div className="">
         <Hero />
 
+
         <Aboutus />
         <Journey />
       </div>
