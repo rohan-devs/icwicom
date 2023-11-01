@@ -127,7 +127,12 @@ export function Navbar() {
                 <Equal />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-                <DropdownMenuItem>Home</DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="/">
+                  Home
+                  </Link>
+                  
+                  </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link href="aboutUs">
                   About us

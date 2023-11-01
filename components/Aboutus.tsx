@@ -8,7 +8,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
-import { useRef } from "react";
+
+import { motion } from "framer-motion";
 function Aboutus() {
 
   return (
@@ -22,17 +23,23 @@ function Aboutus() {
           </CardHeader>
           <CardContent>
             <div className=" grid md:grid-cols-2 gap-3 grid-cols-1 m-3">
-              <div className=" justify-center flex">
+              <motion.div className=" justify-center flex"
+                initial={{ x: -70 }}
+                whileInView={{ x: 0 }}
+                transition={{ duration: 0.5 }}>
                 <Image src="/i2.webp" width={500} height={400} className=" rounded-xl" alt="i2"></Image>
-              </div>
-              <div className=" flex justify-center items-center text-xl">
+              </motion.div>
+              <motion.div className=" flex justify-center items-center text-xl" 
+              initial={{ x: 70 }}
+                whileInView={{ x: 0 }}
+                transition={{ duration: 0.5 }}>
                 The IETE-SF of D.J.Sanghvi organised the second year of ICWiCOM
                 (International conference on wireless communication) held in the
                 institution for the year 2019. The conference was held across
                 two days on the 11th and 12th October. 100+ papers were
                 presented across eight sessions including, for the first time, 2
                 Skype sessions, which was the highlight of this conference.
-              </div>
+              </motion.div>
             </div>
           </CardContent>
         </Card>

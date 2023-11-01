@@ -7,11 +7,16 @@ import {
     CardHeader,
     CardTitle,
   } from "@/components/ui/card";
-
+import { motion } from 'framer-motion';
 
 function Journey() {
   return (
     <>
+    <motion.div   initial={{ x: -70 }}
+                whileInView={{ x: 0 }}
+                transition={{ duration: 0.5 }}>
+
+
    <Card className="m-5 md:my-[400px]">
           <CardHeader>
             <CardTitle className=" underline underline-offset-4 text-center text-3xl">
@@ -32,6 +37,7 @@ function Journey() {
             </div>
           </CardContent>
         </Card>
+        </motion.div>
     </>
   )
 }
