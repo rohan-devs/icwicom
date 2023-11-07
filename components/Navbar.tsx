@@ -55,7 +55,7 @@ export function Navbar() {
                     <div id="aboutus">About us</div>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
-                <NavigationMenuItem>  
+                <NavigationMenuItem>
                   <Link href="/callforpapers" legacyBehavior passHref>
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
@@ -82,7 +82,9 @@ export function Navbar() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger>Commitees</NavigationMenuTrigger>
+                  <NavigationMenuTrigger>
+                    <Link href="/commitee">Commitees</Link>
+                  </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className=" w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[900px]  ">
                       <ListItem>Advisory Commitee</ListItem>
@@ -128,30 +130,22 @@ export function Navbar() {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem>
-                  <Link href="/">
-                  Home
-                  </Link>
-                  
-                  </DropdownMenuItem>
+                  <Link href="/">Home</Link>
+                </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link href="aboutUs">
-                  About us
-                  
-                  </Link>
-                  </DropdownMenuItem>
-                  
+                  <Link href="aboutUs">About us</Link>
+                </DropdownMenuItem>
+
                 <DropdownMenuItem>Call for papers</DropdownMenuItem>
                 <DropdownMenuItem>Dates</DropdownMenuItem>
                 <DropdownMenuItem>Registrations</DropdownMenuItem>
-                <DropdownMenuItem>Commitees</DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="/commitee">Commitees</Link>
+                </DropdownMenuItem>
                 <DropdownMenuItem>Speakers</DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link href="contactUs">
-                  Contact us
-                  </Link>
-                  
-                  
-                  </DropdownMenuItem>
+                  <Link href="contactUs">Contact us</Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
