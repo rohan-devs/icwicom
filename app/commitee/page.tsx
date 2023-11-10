@@ -13,30 +13,23 @@ import {
 function page() {
   return (
     <>
-    patrons
-      <div className="my-[10vh] grid grid-cols-4 overflow-auto gap-5">
-        
-        {data.map((patron, index) => {
-          return (
-            <div
-              className="container md:leading-3 leading-[1.5px]"
-              key={patron.id}
-            >
-              <Card className="w-[350px]">
-      <CardHeader>
-        <CardTitle>{patron.name}</CardTitle>
-        <CardDescription>{patron.description}</CardDescription>
-      </CardHeader>
-      <CardContent>
-       
-      </CardContent>
-     
-    </Card>
-
-
-            </div>
-          );
-        })}
+      <div className="m-6">
+        <div className="my-[10vh]">patrons</div>
+        <div className="my-[10vh] grid md:grid-cols-4 grid-cols-2 overflow-hidden gap-4  ">
+          {data.map((patron, index) => {
+            return (
+              <div key={patron.id} className="">
+                <Card className="">
+                  <CardHeader>
+                    <CardTitle>{patron.name}</CardTitle>
+                    <CardDescription>{patron.description}</CardDescription>
+                  </CardHeader>
+                  <CardContent></CardContent>
+                </Card>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </>
   );

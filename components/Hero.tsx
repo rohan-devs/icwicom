@@ -27,7 +27,7 @@ function Hero() {
           </div>
         </motion.div>
 
-        <div className="  w-full h-[90vh]  justify-center flex-row items-center   z-[-1]   ">
+        <div className="  w-full  h-[90vh]  justify-center flex-row items-center   z-[-1]   ">
           <Image src="/fp.jpg" fill={true} alt="i2"></Image>
         </div>
       </motion.div>
