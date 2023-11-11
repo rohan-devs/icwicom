@@ -5,19 +5,12 @@ import Link from "next/link";
 import { Sun, Moon, Equal } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
+import { motion, useScroll } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuPortal,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import {
@@ -29,13 +22,16 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import Progressbar from "./Progressbar";
 
 export function Navbar() {
   const { theme, setTheme } = useTheme();
   const ref = useRef();
+  const { scrollYProgress } = useScroll();
 
   return (
     <>
+
       <div className=" flex bg-background w-full fixed top-0 z-10 ">
         <div className="   justify-center  flex z-20  w-full items-center    ">
           <div className="md:flex hidden ">
