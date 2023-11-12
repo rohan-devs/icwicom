@@ -1,21 +1,19 @@
-import React from 'react'
-import { Skeleton } from "@/components/ui/skeleton"
+import React from "react";
+import { Skeleton } from "@/components/ui/skeleton";
 
 function page() {
   return (
-    <div className='  my-[10vh] flex flex-col justify-center items-center'>contact page
-    <div>
-        contact amit deshmukh sir
-    </div>
-    <div>
-        work in progress
-    </div>
-    <Skeleton className="w-[100px] h-[20px] rounded-full m-5" />
-
-    
-    
-    </div>
-  )
+    <>
+      <div className="my-[10vh] text-5xl">Contact page</div>
+      <div className="text-center text-3xl">
+        ~Dr. Amit A Deshmukh~ <br />
+        General chair-icwicom,2025 <br />
+        Professor and head, department of Electronics and Telecommunication
+        Engineering <br />
+        D.J. Sanghvi College of Engineering <br />
+      </div>
+    </>
+  );
 }
 
-export default page
+export default page;

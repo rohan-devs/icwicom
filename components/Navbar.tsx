@@ -64,7 +64,10 @@ export function Navbar() {
                   <NavigationMenuTrigger>Dates</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className=" w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[900px]  ">
+                      
+                      <Link href="/dates">
                       <ListItem>Important Dates</ListItem>
+                      </Link>
                       <ListItem>Schedule</ListItem>
                     </ul>
                   </NavigationMenuContent>
@@ -125,23 +128,31 @@ export function Navbar() {
                 <Equal />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
+                  <Link href="/">
                 <DropdownMenuItem>
-                  <Link href="/">Home</Link>
+                    Home
                 </DropdownMenuItem>
+                    </Link>
                 <DropdownMenuItem>
                   <Link href="aboutUs">About us</Link>
                 </DropdownMenuItem>
 
                 <DropdownMenuItem>Call for papers</DropdownMenuItem>
+                <Link href='/dates'>
                 <DropdownMenuItem>Dates</DropdownMenuItem>
+                </Link>
                 <DropdownMenuItem>Registrations</DropdownMenuItem>
+                  <Link href="/commitee">
                 <DropdownMenuItem>
-                  <Link href="/commitee">Commitees</Link>
+                    Commitees
                 </DropdownMenuItem>
+                    </Link>
                 <DropdownMenuItem>Speakers</DropdownMenuItem>
+                <Link href="/contactUs">
                 <DropdownMenuItem>
-                  <Link href="contactUs">Contact us</Link>
+                  Contact Us
                 </DropdownMenuItem>
+                </Link>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
