@@ -40,7 +40,7 @@ function Footer() {
 
           <Link href="/" className=" hover:text-[#793FDF] hover:font-bold">Vaishnavi Pawar</Link>
           
-          <Link href="https://www.linkedin.com/in/rohanshah129/" className=" hover:text-[#793FDF] hover:font-bold">
+          <Link href="https://www.linkedin.com/in/guranshbedi/" className=" hover:text-[#793FDF] hover:font-bold">
             Guransh Bedi
           </Link>
         </div>
