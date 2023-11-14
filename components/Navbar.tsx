@@ -1,11 +1,13 @@
 "use client";
 import { useRef } from "react";
 import * as React from "react";
+import { useState } from "react";
 import Link from "next/link";
+import { useEffect } from "react";
 import { Sun, Moon, Equal } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll,useMotionValue, useMotionValueEvent } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -26,13 +28,36 @@ import Progressbar from "./Progressbar";
 
 export function Navbar() {
   const { theme, setTheme } = useTheme();
-  const ref = useRef();
-  const { scrollYProgress } = useScroll();
+const [hidden, sethidden] = useState(false)
+const {scrollYProgress} = useScroll()
+useMotionValueEvent(scrollYProgress,"change",(latest)=>{
+  const prev=scrollYProgress.getPrevious();
+  if(latest>prev ){
+    sethidden(true)
+  }
+  else{
+    sethidden(false)
+  }
+})
+
+
+
+
 
   return (
     <>
 
-      <div className=" flex bg-background w-full fixed top-0 z-10 ">
+      <motion.div className=" flex bg-background w-full fixed top-0 z-10 "
+      variants={{
+        visble:{y:0},
+        hidden:{y:"-100%"},
+      }}
+      animate={hidden?"hidden":"visble"}
+      transition={{duration:0.5}}
+      
+      
+      
+      >
         <div className="   justify-center  flex z-20  w-full items-center    ">
           <div className="md:flex hidden ">
             <NavigationMenu className="m-3">
@@ -157,7 +182,7 @@ export function Navbar() {
             </DropdownMenu>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

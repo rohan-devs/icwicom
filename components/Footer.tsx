@@ -32,16 +32,16 @@ function Footer() {
         </div>
       </div>
       <div className=" bg-cyan-300 w-full  flex flex-col text-xl my-4 bottom-0 left-0 right-0 text-black text-center items-center p-4">
-        Archited by Infotech Team IETE-ISF
+      Architected by Infotech Team IETE-ISF
         <div className=" flex  justify-center md:gap-4 ">
           <Link href="https://www.linkedin.com/in/rohanshah129/" className=" hover:text-[#793FDF] hover:font-bold">
-            Rohan Shah
+            Rohan
           </Link>
 
-          <Link href="/" className=" hover:text-[#793FDF] hover:font-bold">Vaishnavi Pawar</Link>
+          <Link href="https://www.linkedin.com/in/vaishnavi-pawar-81180429b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className=" hover:text-[#793FDF] hover:font-bold">Vaishnavi</Link>
           
           <Link href="https://www.linkedin.com/in/guranshbedi/" className=" hover:text-[#793FDF] hover:font-bold">
-            Guransh Bedi
+            Guransh
           </Link>
         </div>
       </div>
