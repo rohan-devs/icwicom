@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 
-
 import { Separator } from "@/components/ui/separator";
 
 import { Space_Grotesk } from "next/font/google";
@@ -11,8 +10,6 @@ import { ReactNode } from "react";
 import Footer from "@/components/Footer";
 const font = Space_Grotesk({
   subsets: ["latin"],
-
-
 });
 
 type RootLayoutProps = {
@@ -20,8 +17,6 @@ type RootLayoutProps = {
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  
-
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={font.className}>
