@@ -4,11 +4,25 @@ import * as React from "react";
 import { useState } from "react";
 import Link from "next/link";
 import { useEffect } from "react";
-import { Sun, Moon, Equal } from "lucide-react";
+import { Sun, Moon, Equal, Ghost } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
-import { motion, useScroll,useMotionValue, useMotionValueEvent } from "framer-motion";
+import {
+  motion,
+  useScroll,
+  useMotionValue,
+  useMotionValueEvent,
+} from "framer-motion";
 import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -28,35 +42,27 @@ import Progressbar from "./Progressbar";
 
 export function Navbar() {
   const { theme, setTheme } = useTheme();
-const [hidden, sethidden] = useState(false)
-const {scrollYProgress} = useScroll()
-useMotionValueEvent(scrollYProgress,"change",(latest)=>{
-  const prev=scrollYProgress.getPrevious();
-  if(latest>prev ){
-    sethidden(true)
-  }
-  else{
-    sethidden(false)
-  }
-})
-
-
-
-
+  const [hidden, sethidden] = useState(false);
+  const { scrollYProgress } = useScroll();
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    const prev = scrollYProgress.getPrevious();
+    if (latest > prev) {
+      sethidden(true);
+    } else {
+      sethidden(false);
+    }
+  });
 
   return (
     <>
-
-      <motion.div className=" flex bg-background w-full fixed top-0 z-10 "
-      variants={{
-        visble:{y:0},
-        hidden:{y:"-100%"},
-      }}
-      animate={hidden?"hidden":"visble"}
-      transition={{duration:0.5}}
-      
-      
-      
+      <motion.div
+        className=" flex bg-background w-full fixed top-0 z-10 "
+        variants={{
+          visble: { y: 0 },
+          hidden: { y: "-100%" },
+        }}
+        animate={hidden ? "hidden" : "visble"}
+        transition={{ duration: 0.5 }}
       >
         <div className="   justify-center  flex z-20  w-full items-center    ">
           <div className="md:flex hidden ">
@@ -89,9 +95,8 @@ useMotionValueEvent(scrollYProgress,"change",(latest)=>{
                   <NavigationMenuTrigger>Dates</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className=" w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[900px]  ">
-                      
                       <Link href="/dates">
-                      <ListItem>Important Dates</ListItem>
+                        <ListItem>Important Dates</ListItem>
                       </Link>
                       <ListItem>Schedule</ListItem>
                     </ul>
@@ -139,7 +144,7 @@ useMotionValueEvent(scrollYProgress,"change",(latest)=>{
               </NavigationMenuList>
             </NavigationMenu>
           </div>
-          <span className=" justify-end m-5">
+          <span className="flex justify-end m-5">
             <Button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               className=" rounded-2xl"
@@ -147,39 +152,39 @@ useMotionValueEvent(scrollYProgress,"change",(latest)=>{
               {theme === "dark" ? <Sun /> : <Moon />}
             </Button>
           </span>
-          <div className=" md:hidden flex justify-end">
-            <DropdownMenu>
-              <DropdownMenuTrigger>
+          <div className=" md:hidden">
+            <Sheet>
+              <SheetTrigger>
                 <Equal />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                  <Link href="/">
-                <DropdownMenuItem>
-                    Home
-                </DropdownMenuItem>
-                    </Link>
-                <DropdownMenuItem>
-                  <Link href="aboutUs">About us</Link>
-                </DropdownMenuItem>
+              </SheetTrigger>
+              <SheetContent >
+                <div className=" flex flex-col items-center justify-center my-[20px] ">
+                  <Button variant="link"> 
+                    <Link href="/">Home</Link>
+                  </Button>
+                  <Button variant="link">
+                    <Link href="/">About us</Link>
+                  </Button>
+                  <Button variant="link">
+                    <Link href="/">Call for Papers</Link>
+                  </Button>
+                  <Button variant="link">
+                    <Link href="/dates">Dates</Link>
+                  </Button>
+                  <Button variant="link">
+                    <Link href="/commitee">Commitees</Link>
+                  </Button> 
+                  <Button variant="link">
+                    <Link href="/">Speakers</Link>
+                  </Button>
+                  <Button variant="link">
+                    <Link href="/contactUs">Contact us</Link>
+                  </Button>
+                </div>
 
-                <DropdownMenuItem>Call for papers</DropdownMenuItem>
-                <Link href='/dates'>
-                <DropdownMenuItem>Dates</DropdownMenuItem>
-                </Link>
-                <DropdownMenuItem>Registrations</DropdownMenuItem>
-                  <Link href="/commitee">
-                <DropdownMenuItem>
-                    Commitees
-                </DropdownMenuItem>
-                    </Link>
-                <DropdownMenuItem>Speakers</DropdownMenuItem>
-                <Link href="/contactUs">
-                <DropdownMenuItem>
-                  Contact Us
-                </DropdownMenuItem>
-                </Link>
-              </DropdownMenuContent>
-            </DropdownMenu>
+               
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </motion.div>

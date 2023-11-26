@@ -5,11 +5,12 @@ import { ThemeProvider } from "next-themes";
 
 import { Separator } from "@/components/ui/separator";
 
-import { Space_Grotesk } from "next/font/google";
+import { Roboto } from "next/font/google";
 import { ReactNode } from "react";
 import Footer from "@/components/Footer";
-const font = Space_Grotesk({
-  subsets: ["latin"],
+const font = Roboto({
+  subsets: ["latin-ext"],
+  weight: ['400'],
 });
 
 type RootLayoutProps = {
