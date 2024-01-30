@@ -64,7 +64,7 @@ export function Navbar() {
         animate={hidden ? "hidden" : "visble"}
         transition={{ duration: 0.5 }}
       >
-        <div className="   justify-center  flex z-20  w-full items-center    ">
+        <div className="   md:justify-center justify-end mx-[-10px] flex z-20  w-full items-center    ">
           <div className="md:flex hidden ">
             <NavigationMenu className="m-3">
               <NavigationMenuList>
@@ -77,11 +77,7 @@ export function Navbar() {
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    <div id="aboutus">About us</div>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
+
                 <NavigationMenuItem>
                   <Link href="/callforpapers" legacyBehavior passHref>
                     <NavigationMenuLink
@@ -98,27 +94,37 @@ export function Navbar() {
                       <Link href="/dates">
                         <ListItem>Important Dates</ListItem>
                       </Link>
-                      <ListItem>Schedule</ListItem>
+                      <Link href="/schedule">
+                        <ListItem>Schedule</ListItem>
+                      </Link>
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger>Registrations</NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className=" w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[900px] ">
-                      <ListItem>Registration Details</ListItem>
-                    </ul>
-                  </NavigationMenuContent>
+                  <Link href="/register" legacyBehavior passHref>
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      Registration
+                    </NavigationMenuLink>
+                  </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>
-                    <Link href="/commitee">Commitees</Link>
+                    <Link href="/commitee">Committees</Link>
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className=" w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[900px]  ">
-                      <ListItem>Advisory Commitee</ListItem>
-                      <ListItem>Technical Program Commitee</ListItem>
-                      <ListItem>Organizing Commitee</ListItem>
+                      <Link href="/advisorycommitee">
+                        <ListItem>Advisory Committee</ListItem>
+                      </Link>
+                      <Link href="/technicalcommitee">
+                        <ListItem>Technical Program Committee</ListItem>
+                      </Link>
+                      <Link href="/oc">
+                      
+                      <ListItem>Organizing Committee</ListItem>
+                      </Link>
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -126,8 +132,14 @@ export function Navbar() {
                   <NavigationMenuTrigger>Speakers</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className=" w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[900px]  ">
+                      <Link href="keynotespeakers">
+                      
                       <ListItem>Keynote Speakers</ListItem>
+                      </Link>
+                      <Link href="plenary">
+                      
                       <ListItem>Plenary</ListItem>
+                      </Link>
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -144,7 +156,7 @@ export function Navbar() {
               </NavigationMenuList>
             </NavigationMenu>
           </div>
-          <span className="flex justify-end m-5">
+          <span className="flex m-5">
             <Button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               className=" rounded-2xl"
@@ -157,9 +169,9 @@ export function Navbar() {
               <SheetTrigger>
                 <Equal />
               </SheetTrigger>
-              <SheetContent >
+              <SheetContent>
                 <div className=" flex flex-col items-center justify-center my-[20px] ">
-                  <Button variant="link"> 
+                  <Button variant="link">
                     <Link href="/">Home</Link>
                   </Button>
                   <Button variant="link">
@@ -172,17 +184,24 @@ export function Navbar() {
                     <Link href="/dates">Dates</Link>
                   </Button>
                   <Button variant="link">
-                    <Link href="/commitee">Commitees</Link>
-                  </Button> 
+                    <Link href="/advisorycommitee">Advisory Committee</Link>
+                  </Button>
                   <Button variant="link">
-                    <Link href="/">Speakers</Link>
+                    <Link href="/technicalcommitee">Technical Committee</Link>
+                  </Button>
+                  <Button variant="link">
+                    <Link href="/oc">Organizing Committee</Link>
+                  </Button>
+                  <Button variant="link">
+                    <Link href="/keynotespeakers">KeynoteSpeakers</Link>
+                  </Button>
+                  <Button variant="link">
+                    <Link href="/plenary">Plenary</Link>
                   </Button>
                   <Button variant="link">
                     <Link href="/contactUs">Contact us</Link>
                   </Button>
                 </div>
-
-               
               </SheetContent>
             </Sheet>
           </div>

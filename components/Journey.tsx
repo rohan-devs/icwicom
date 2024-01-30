@@ -27,12 +27,14 @@ function Journey() {
             <div className=" grid  gap-3 grid-cols-1 m-3">
              
               <div className=" flex justify-center items-center text-xl">
-                The IETE-SF of D.J.Sanghvi organised the second year of ICWiCOM
-                (International conference on wireless communication) held in the
-                institution for the year 2019. The conference was held across
-                two days on the 17th,19th 21st. 100+ papers were
-                presented across eight sessions including, for the first time, 2
-                Skype sessions, which was the highlight of this conference.
+              ICWiCOM is being organised with a view
+to
+cultivate
+research
+activities in the field of Wireless Communication at our institute.
+The conference will bring in eminent personalities from various areas of Wireless Communication on a common platform.
+Interactions during the conference are expected to open up many research areas for upcoming Post-graduate & Doctoral students
+as well.
               </div>
             </div>
           </CardContent>

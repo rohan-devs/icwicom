@@ -1,4 +1,4 @@
-import data from "../alldata/patron.json";
+import data from "../alldata/techcom.json";
 import * as React from "react";
 
 import {
@@ -13,15 +13,15 @@ import {
 function page() {
   return (
     <>
-      <div className="m-6">
-        <div className="my-[10vh]">patrons</div>
-        <div className="my-[10vh] grid md:grid-cols-4 grid-cols-2 overflow-hidden gap-4  ">
+      <div className="m-2">
+        <div className="my-[10vh] font-bold flex justify-center">Technical Commitee</div>
+        <div className="my-[10vh] grid md:grid-cols-4 grid-cols-1 overflow-hidden gap-4  ">
           {data.map((patron, index) => {
             return (
               <div key={patron.id} className="">
                 <Card className="">
                   <CardHeader>
-                    <CardTitle>{patron.name}</CardTitle>
+                    <CardTitle className=" overscroll-scroll">{patron.name}</CardTitle>
                     <CardDescription>{patron.description}</CardDescription>
                   </CardHeader>
                   <CardContent></CardContent>

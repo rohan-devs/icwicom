@@ -33,12 +33,7 @@ function Aboutus() {
               initial={{ x: 70 }}
                 whileInView={{ x: 0 }}
                 transition={{ duration: 0.5 }}>
-                The IETE-SF of D.J.Sanghvi organised the second year of ICWiCOM
-                (International conference on wireless communication) held in the
-                institution for the year 2019. The conference was held across
-                two days on the 11th and 12th October. 100+ papers were
-                presented across eight sessions including, for the first time, 2
-                Skype sessions, which was the highlight of this conference.
+               Dwarkadas. J. Sanghvi College of Engineering started the course in Electronics & Telecommunication Engineering (EXTC), in 1999 with the intake of 30. In the subsequent year, it was increased to 60. In the year 2010, it was increased to 120.Since then the intake at the undergraduate level is 120. Department is running M.Tech. Program in Electronics & telecommunication since 2011, with the intake of 18 students. Affiliated to the University of Mumbai, Ph.D. Research centre of the Department, started from Academic year 2015–16. This program is accredited by National Board of Accreditation with effect from the Academic Year 2012-13. Since Academic Year 2022-23 department intake has increased to 180.
               </motion.div>
             </div>
           </CardContent>

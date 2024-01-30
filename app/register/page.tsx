@@ -4,8 +4,8 @@ function page() {
   return (
     <>
 
-    <div className=' my-[10vh] text-center'></div>
-    <div className='  text-center  animate-pulse duration-1000 text-5xl'>
+
+    <div className=' text-4xl text-center'>
 To be announced 
     </div>
     

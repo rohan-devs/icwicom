@@ -1,0 +1,98 @@
+[
+    {
+        "id": "1",
+        "name": "Dr. Prasad Joshi",
+        "description": "Professor"
+ 
+    },
+    {
+        "id": "2",
+        "name": "Dr. Sunil Karamchandani",
+        "description": "Associate Professor"
+      
+    },
+    {
+        "id": "3",
+        "name": "Prof. Tanaji D. Biradar",
+        "description": "Associate Professor & Associate Head"
+
+    },
+    {
+        "id": "4",
+        "name": "Dr. Vishakha Kelkar",
+        "description": "Associate Professor"
+
+    },
+    {
+        "id": "5",
+        "name": "Dr. Sanjay Deshmukh",
+        "description": "Assistant Professor"
+
+    },
+    {
+        "id": "6",
+        "name": "Dr. Poonam Kadam",
+        "description": "Assistant Professor"
+
+    },
+    {
+        "id": "7",
+        "name": "Dr. Anuja Odhekar",
+        "description": "Assistant Professor"
+
+    },
+    {
+        "id": "8",
+        "name": "Prof. Rahul Taware",
+        "description": "Assistant Professor"
+
+    },
+    {
+        "id": "9",
+        "name": "Dr. Ameya Kadam",
+        "description": "Assistant Professor"
+
+    },
+    {
+        "id": "10",
+        "name": "Prof. Ranjushree Pal",
+        "description": "Assistant Professor"
+
+    },
+    {
+        "id": "11",
+        "name": "Dr. Venkata A. P. Chavali",
+        "description": "Assistant Professor"
+
+    },
+    {
+        "id": "12",
+        "name": "Prof. Mrunalini Pimpale",
+        "description": "Assistant Professor"
+
+    },
+    {
+        "id": "13",
+        "name": "Prof. Archana Chaudhari",
+        "description": "Assistant Professor"
+
+    },
+    {
+        "id": "14",
+        "name": "Prof. Yukti Bandi",
+        "description": "Assistant Professor"
+
+    },
+    {
+        "id": "15",
+        "name": "Dr. Aarti Ambekar",
+        "description": "Assistant Professor"
+
+    }
+
+    
+
+    
+ 
+]
+

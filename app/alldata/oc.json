@@ -1,0 +1,86 @@
+[
+    {
+        "id": "1",
+        "name": "Prof. Revathi A. S.",
+        "description": "Professor"
+ 
+    },
+    {
+        "id": "2",
+        "name": "Dr. Darshna Sankhe",
+        "description": "Associate Professor"
+      
+    },
+    {
+        "id": "3",
+        "name": "Prof. Chandrashekhar Beral",
+        "description": "Associate Professor"
+
+    },
+    {
+        "id": "4",
+        "name": "Prof. Bahar Soparkar",
+        "description": "Associate Professor"
+
+    },
+    {
+        "id": "5",
+        "name": "Prof. Sejal Kadam",
+        "description": "Assistant Professor"
+
+    },
+    {
+        "id": "6",
+        "name": "Prof. Sheeja Nair",
+        "description": "Assistant Professor"
+
+    },
+    {
+        "id": "7",
+        "name": "Prof. Pavankumar Borra",
+        "description": "Assistant Professor"
+
+    },
+    {
+        "id": "8",
+        "name": "Prof. Abhilasha Raghtate",
+        "description": "Assistant Professor"
+
+    },
+    {
+        "id": "9",
+        "name": "Prof. Supriya Dicholkar",
+        "description": "Assistant Professor"
+
+    },
+    {
+        "id": "10",
+        "name": "Dr. Ankita Malhotra",
+        "description": "Assistant Professor"
+
+    },
+    {
+        "id": "11",
+        "name": "Prof. Dipti Kale",
+        "description": "Assistant Professor"
+
+    },
+    {
+        "id": "12",
+        "name": "Prof. Tushar Sawant",
+        "description": "Assistant Professor (Adhoc)"
+
+    },
+    {
+        "id": "13",
+        "name": "Dr. Venkataramanan V.",
+        "description": "Assistant Professor"
+
+    }
+
+    
+
+    
+ 
+]
+
