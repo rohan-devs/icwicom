@@ -144,7 +144,7 @@ function page() {
       <Card>
       <CardHeader>
                 <CardTitle className=" overscroll-scroll text-center">
-General Chair-Principal
+General Chair-Dr. Hari Vasudevan
                 </CardTitle>
 
                

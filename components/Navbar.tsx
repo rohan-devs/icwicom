@@ -1,9 +1,9 @@
 "use client";
-import { useRef } from "react";
+
 import * as React from "react";
 import { useState } from "react";
 import Link from "next/link";
-import { useEffect } from "react";
+
 import { Sun, Moon, Equal, Ghost } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
@@ -56,7 +56,7 @@ export function Navbar() {
   return (
     <>
       <motion.div
-        className=" flex bg-background w-full fixed top-0 z-10 "
+        className=" flex bg-background w-full fixed top-0 z-10  "
         variants={{
           visble: { y: 0 },
           hidden: { y: "-100%" },
@@ -174,9 +174,7 @@ export function Navbar() {
                   <Button variant="link">
                     <Link href="/">Home</Link>
                   </Button>
-                  <Button variant="link">
-                    <Link href="/">About us</Link>
-                  </Button>
+                
                   <Button variant="link">
                     <Link href="/">Call for Papers</Link>
                   </Button>

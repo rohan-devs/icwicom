@@ -6,8 +6,8 @@ function page() {
     <>
       <div className="my-[10vh] text-5xl">Contact page</div>
       <div className="text-center text-3xl">
-        ~Dr. Amit A Deshmukh~ <br />
-        General chair-icwicom,2025 <br />
+        Prof. Amit A Deshmukh <br />
+
         Professor and head, department of Electronics and Telecommunication
         Engineering <br />
         D.J. Sanghvi College of Engineering <br />
