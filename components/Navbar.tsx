@@ -56,7 +56,7 @@ export function Navbar() {
   return (
     <>
       <motion.div
-        className=" flex bg-background w-full fixed top-0 z-10  "
+      className=" flex bg-background w-full fixed top-0 z-10  "
         variants={{
           visble: { y: 0 },
           hidden: { y: "-100%" },
@@ -111,7 +111,7 @@ export function Navbar() {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>
-                    <Link href="/commitee">Committees</Link>
+         Committees
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className=" w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[900px]  ">
