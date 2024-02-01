@@ -20,7 +20,7 @@ function page() {
             <Card className="">
               <CardHeader>
                 <CardTitle className=" overscroll-scroll text-center">
-                  SHRI AMISH R PATEL
+                  SHRI AMRISH R PATEL
                 </CardTitle>
                 <CardDescription className=" text-center">
                   Hon. President and Trustee
