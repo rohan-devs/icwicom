@@ -38,7 +38,7 @@ function page() {
                   SHRI BHUPESH R PATEL
                 </CardTitle>
                 <CardDescription className=" text-center">
-                  Hon. President and Trustee
+                  Hon. Joint President and Trustee
                 </CardDescription>
               </CardHeader>
               {/* <CardContent></CardContent> */}
