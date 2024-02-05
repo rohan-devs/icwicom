@@ -38,7 +38,7 @@ function page() {
                   SHRI BHUPESH R PATEL
                 </CardTitle>
                 <CardDescription className=" text-center">
-                  Hon. President and Trustee
+                  Hon. Joint President and Trustee
                 </CardDescription>
               </CardHeader>
               {/* <CardContent></CardContent> */}
@@ -130,7 +130,7 @@ function page() {
             <Card className="">
               <CardHeader>
                 <CardTitle className=" overscroll-scroll text-center">
-                SHRI JAGDISH B. FARIKH
+                SHRI JAGDISH B. PARIKH
                 </CardTitle>
                 <CardDescription className=" text-center">
                 HON. JT. TREASURER
