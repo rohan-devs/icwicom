@@ -20,7 +20,7 @@ function page() {
             <Card className="">
               <CardHeader>
                 <CardTitle className=" overscroll-scroll text-center">
-                  SHRI AMRISH R PATEL
+                  SHRI AMRISH R. PATEL
                 </CardTitle>
                 <CardDescription className=" text-center">
                   Hon. President and Trustee
@@ -35,7 +35,7 @@ function page() {
             <Card className="">
               <CardHeader>
                 <CardTitle className=" overscroll-scroll text-center">
-                  SHRI BHUPESH R PATEL
+                  SHRI BHUPESH R. PATEL
                 </CardTitle>
                 <CardDescription className=" text-center">
                   Hon. Joint President and Trustee
@@ -50,20 +50,7 @@ function page() {
             <Card className="">
               <CardHeader>
                 <CardTitle className=" overscroll-scroll text-center">
-                  BHARAT M. SANGHVI
-                </CardTitle>
-                <CardDescription className=" text-center">
-                  Hon. Joint Vice President and Trustee
-                </CardDescription>
-              </CardHeader>
-              {/* <CardContent></CardContent> */}
-            </Card>
-          </div>
-          <div className=" ">
-            <Card className="">
-              <CardHeader>
-                <CardTitle className=" overscroll-scroll text-center">
-                  SHRI CHINTAN A PATEL
+                  SHRI BHARAT M. SANGHVI
                 </CardTitle>
                 <CardDescription className=" text-center">
                   Hon. Vice President and Trustee
@@ -76,7 +63,20 @@ function page() {
             <Card className="">
               <CardHeader>
                 <CardTitle className=" overscroll-scroll text-center">
-                  JAYANT P. GANDHI
+                  SHRI CHINTAN A. PATEL
+                </CardTitle>
+                <CardDescription className=" text-center">
+                  Hon. Vice President and Trustee
+                </CardDescription>
+              </CardHeader>
+              {/* <CardContent></CardContent> */}
+            </Card>
+          </div>
+          <div className=" ">
+            <Card className="">
+              <CardHeader>
+                <CardTitle className=" overscroll-scroll text-center">
+                  SHRI JAYANT P. GANDHI
                 </CardTitle>
                 <CardDescription className=" text-center">
                   Hon.Secretary
@@ -154,7 +154,7 @@ General Chair-Dr. Hari Vasudevan
       <Card>
       <CardHeader>
                 <CardTitle className=" overscroll-scroll text-center">
-Conference Chair-Prof. Amit A Deshmukh
+Conference Chair-Prof. Amit A. Deshmukh
                 </CardTitle>
 
                

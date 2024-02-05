@@ -22,7 +22,7 @@ function page() {
                 <Card className="">
                   <CardHeader>
                     <CardTitle className=" overscroll-scroll">{patron.name}</CardTitle>
-                    <CardDescription>{patron.description}</CardDescription>
+                 
                   </CardHeader>
                   <CardContent></CardContent>
                 </Card>
