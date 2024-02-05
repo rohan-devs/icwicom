@@ -56,7 +56,7 @@ function Footer() {
           </Link>
         </div>
       </div>
-      <div className=" text-center">All rights reserved &copy; 2023</div>
+      <div className=" text-center">All rights reserved &copy; 2024</div>
     </>
   );
 }
