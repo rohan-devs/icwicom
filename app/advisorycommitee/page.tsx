@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Separator } from "@/components/ui/separator";
 import {
   Card,
   CardContent,
@@ -107,7 +107,7 @@ function page() {
                   SHRI SHALIN S. DIVATIA
                 </CardTitle>
                 <CardDescription className=" text-center">
-                HON. JT. SECRETARY
+                  HON. JT. SECRETARY
                 </CardDescription>
               </CardHeader>
               {/* <CardContent></CardContent> */}
@@ -117,10 +117,10 @@ function page() {
             <Card className="">
               <CardHeader>
                 <CardTitle className=" overscroll-scroll text-center">
-                SHRI HARIT H. CHITALIA
+                  SHRI HARIT H. CHITALIA
                 </CardTitle>
                 <CardDescription className=" text-center">
-                HON. JT. TREASURER
+                  HON. JT. TREASURER
                 </CardDescription>
               </CardHeader>
               {/* <CardContent></CardContent> */}
@@ -130,10 +130,10 @@ function page() {
             <Card className="">
               <CardHeader>
                 <CardTitle className=" overscroll-scroll text-center">
-                SHRI JAGDISH B. PARIKH
+                  SHRI JAGDISH B. PARIKH
                 </CardTitle>
                 <CardDescription className=" text-center">
-                HON. JT. TREASURER
+                  HON. JT. TREASURER
                 </CardDescription>
               </CardHeader>
               {/* <CardContent></CardContent> */}
@@ -142,26 +142,57 @@ function page() {
         </div>
       </div>
       <Card>
-      <CardHeader>
-                <CardTitle className=" overscroll-scroll text-center">
-General Chair-Dr. Hari Vasudevan
-                </CardTitle>
-
-               
-              </CardHeader>
-
+        <CardHeader>
+          <CardTitle className=" overscroll-scroll text-center">
+            General Chair - Dr. Hari Vasudevan
+          </CardTitle>
+        </CardHeader>
       </Card>
       <Card>
-      <CardHeader>
-                <CardTitle className=" overscroll-scroll text-center">
-Conference Chair-Prof. Amit A. Deshmukh
-                </CardTitle>
-
-               
-              </CardHeader>
-
+        <CardHeader>
+          <CardTitle className=" overscroll-scroll text-center">
+            Conference Chair - Prof. Amit A. Deshmukh
+          </CardTitle>
+        </CardHeader>
       </Card>
-    
+      <Separator />
+
+      <h1 className="text-5xl font-bold text-center my-7">
+        International Advisory Committee
+      </h1>
+      <Separator />
+
+      <ul className=" text-2xl flex my-11 flex-col text-center gap-4">
+        <li>Dr. Zoran Gajic, Rutgers University, USA</li>
+
+
+        <li>Dr. Banmali Rawat, University of Nevada, Reno, USA</li>
+        <li>Dr. Pramod K. B., Researcher Uppsala University,Sweden</li>
+        <li>Prof. Suramate Chalermwisutkul, KMUTNB, Bangkok</li>
+      </ul>
+      <Separator />
+
+      <h1 className="text-5xl font-bold text-center my-7">
+        National Advisory Committee
+      </h1>
+      <Separator />
+
+      <ul className=" text-2  xl flex my-11 flex-col text-center gap-4">
+        <li>Prof. R. K. Shevgaonkar, Emeritus Professor, IIT Bombay</li>
+        <li>Dr. Nageshwar Rao, Vice Chancellor, IGNOU, India</li>
+        <li>Dr. S. N. Merchant, IIT Bombay</li>
+        <li>Dr. Girish Kumar, IIT Bombay</li>
+        <li>Dr. D. Manjunath, IIT Bombay</li>
+        <li>Dr. K. P. Ray, DIAT, Pune</li>
+        <li>
+          Dr. Debatosh Guha, Institute of Radio Physics and Electronics,
+          University of Calcutta
+        </li>
+        <li>Dr. Asha E. Daniel, CUSAT, Kochi, India</li>
+        <li>Dr. Mahesh P. Abegaonkar, IIT Delhi</li>
+        <li>Dr. Sukomal Dey, IIT Palakkad</li>
+        <li>Dr. Amit Kumar Singh, IIT Patna</li>
+      </ul>
     </>
   );
 }
