@@ -164,8 +164,9 @@ function page() {
 
       <ul className=" text-2xl flex my-11 flex-col text-center gap-4">
         <li>Dr. Zoran Gajic, Rutgers University, USA</li>
-
         <li>Dr. Banmali Rawat, University of Nevada, Reno, USA</li>
+        <li>Prof. Valentina Emilia Balas, University of Arad,Romania</li>
+        <li>Marius M. Balas, University “Aurel Vlaicu” of Arad (Romania)</li>
         <li>Dr. Pramod K. B., Researcher Uppsala University,Sweden</li>
         <li>Prof. Suramate Chalermwisutkul, KMUTNB, Bangkok</li>
       </ul>
@@ -190,7 +191,7 @@ function page() {
         <li>Dr. Asha E. Daniel, CUSAT, Kochi, India</li>
         <li>Dr. Mahesh P. Abegaonkar, IIT Delhi</li>
         <li>Dr. Sukomal Dey, IIT Palakkad</li>
-        <li>Dr. Amit Kumar Singh, IIT Patna</li>  
+        <li>Dr. Amit Kumar Singh, IIT Patna</li>
       </ul>
     </>
   );
