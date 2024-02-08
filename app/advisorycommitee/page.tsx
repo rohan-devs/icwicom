@@ -165,8 +165,8 @@ function page() {
       <ul className=" text-2xl flex my-11 flex-col text-center gap-4">
         <li>Dr. Zoran Gajic, Rutgers University, USA</li>
 
-        <li>Prof. Valentina Emilia Balas, University of Arad,Romania</li>
-        <li>Marius M. Balas, University “Aurel Vlaicu” of Arad (Romania)</li>
+        <li>Prof. Valentina Emilia Balas,“Aurel Vlaicu” University of Arad, Romania</li>
+        <li>Prof. Marius M. Balas, “Aurel Vlaicu” University of Arad, Romania</li>
         <li>Dr. Pramod K. B., Researcher Uppsala University,Sweden</li>
         <li>Prof. Suramate Chalermwisutkul, KMUTNB, Bangkok</li>
       </ul>
