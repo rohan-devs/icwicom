@@ -24,7 +24,7 @@ function Footer() {
           </CardHeader>
           <ul>
             Email:{" "}
-            <Link href="mailTo:rohanshah6982@gmail.com">
+            <Link href="mailTo:djextcicwicom@gmail.com">
               djextcicwicom@gmail.com
             </Link>
           </ul>
