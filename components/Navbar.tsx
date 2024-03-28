@@ -79,12 +79,15 @@ export function Navbar() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <Link href="/callforpapers" legacyBehavior passHref>
+                  <Link href="/ICWiCOM 2025.pdf" target="_blank"  passHref>
+               
+
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
-                    >
+                      >
                       Call for papers
                     </NavigationMenuLink>
+
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
@@ -176,7 +179,7 @@ export function Navbar() {
                   </Button>
                 
                   <Button variant="link">
-                    <Link href="/">Call for Papers</Link>
+                    <Link href="/ICWiCOM 2025.pdf" target="_blank">Call for Papers</Link>
                   </Button>
                   <Button variant="link">
                     <Link href="/dates">Dates</Link>
