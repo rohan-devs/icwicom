@@ -141,20 +141,29 @@ function page() {
           </div>
         </div>
       </div>
-      <Card>
-        <CardHeader>
-          <CardTitle className=" overscroll-scroll text-center">
-            General Chair - Dr. Hari Vasudevan
-          </CardTitle>
-        </CardHeader>
-      </Card>
-      <Card>
-        <CardHeader>
-          <CardTitle className=" overscroll-scroll text-center">
-            Conference Chair - Prof. Amit A. Deshmukh
-          </CardTitle>
-        </CardHeader>
-      </Card>
+      <div className="flex flex-col gap-3 m-2">
+        <Card>
+          <CardHeader>
+            <CardTitle className=" overscroll-scroll text-center">
+              General Chair - Dr. Hari Vasudevan
+            </CardTitle>
+          </CardHeader>
+        </Card>
+        <Card>
+          <CardHeader>
+            <CardTitle className=" overscroll-scroll text-center">
+              General Co - Chair - Dr. Narendra Shekokar
+            </CardTitle>
+          </CardHeader>
+        </Card>
+        <Card>
+          <CardHeader>
+            <CardTitle className=" overscroll-scroll text-center">
+              Conference Chair - Prof. Amit A. Deshmukh
+            </CardTitle>
+          </CardHeader>
+        </Card>
+      </div>
       <Separator />
 
       <h1 className="text-5xl font-bold text-center my-7">
