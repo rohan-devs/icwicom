@@ -80,8 +80,6 @@ export function Navbar() {
 
                 <NavigationMenuItem>
                   <Link href="/ICWiCOM 2025.pdf" target="_blank"  passHref>
-               
-
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
                       >
