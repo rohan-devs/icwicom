@@ -15,7 +15,6 @@ function page() {
             <Link
               href={'https://easychair.org/account2/signin?l=5399684799226378634'}
               target="_blank"
-
             >
               Submit here
             </Link>
