@@ -145,21 +145,21 @@ function page() {
         <Card>
           <CardHeader>
             <CardTitle className=" overscroll-scroll text-center">
-              General Chair - Dr. Hari Vasudevan
+              General Chair - Dr. Hari Vasudevan, Principal, DJSCE
             </CardTitle>
           </CardHeader>
         </Card>
         <Card>
           <CardHeader>
             <CardTitle className=" overscroll-scroll text-center">
-              General Co - Chair - Dr. Narendra Shekokar
+              General Co - Chair - Dr. Narendra Shekokar, Vice Principal, DJSCE
             </CardTitle>
           </CardHeader>
         </Card>
         <Card>
           <CardHeader>
             <CardTitle className=" overscroll-scroll text-center">
-              Conference Chair - Prof. Amit A. Deshmukh
+              Conference Chair - Prof. Amit A. Deshmukh, Prof. & Head, EXTC, DJSCE
             </CardTitle>
           </CardHeader>
         </Card>

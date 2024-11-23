@@ -3,13 +3,13 @@
         "id": "1",
         "name": "Prof. Revathi A. S.",
         "description": "Professor"
- 
+
     },
     {
         "id": "2",
         "name": "Dr. Darshna Sankhe",
         "description": "Associate Professor"
-      
+
     },
     {
         "id": "3",
@@ -73,14 +73,10 @@
     },
     {
         "id": "13",
-        "name": "Dr. Venkataramanan V.",
+        "name": "Prof. V. Nar",
         "description": "Assistant Professor"
 
     }
 
-    
-
-    
- 
 ]
 
