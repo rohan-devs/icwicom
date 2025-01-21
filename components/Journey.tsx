@@ -52,12 +52,12 @@ function Journey() {
                   </Link>
                 </div>
                 <br />
-                <div>
+                {/* <div>
                   For Paper submission through Easy Chair for ICWiCOM 2025: <Link
                     href={"https://easychair.org/account2/signin?l=5399684799226378634"}
                     target="blank"
                   >Tap here.</Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </CardContent>

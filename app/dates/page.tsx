@@ -11,14 +11,6 @@ function page() {
 
           Paper Submission deadline: 1st May, 2025 
           <br />
-          <div className='text-2xl'>
-            <Link
-              href={'https://easychair.org/account2/signin?l=5399684799226378634'}
-              target="_blank"
-            >
-              Submit here
-            </Link>
-          </div>
       </div>
       <div>
 
