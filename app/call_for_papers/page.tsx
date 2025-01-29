@@ -13,7 +13,7 @@ function page() {
                 Call for papers
             </h1>
             <p className="text-left text-lg">
-                We invite researchers, academicians, and industry experts to contribute to ICWICOM 2025, a premier conference dedicated to advancing innovations in wireless communication and emerging technologies. Join us in shaping the future by sharing your groundbreaking research, novel ideas, and technical advancements with a global audience.
+                We invite researchers, academicians, and industry experts to contribute to ICWiCOM 2025, a premier conference dedicated to advancing innovations in wireless communication and emerging technologies. Join us in shaping the future by sharing your groundbreaking research, novel ideas, and technical advancements with a global audience.
             </p>
             <br />
             <h1 className="text-3xl font-semibold">
@@ -46,7 +46,7 @@ function page() {
                     Full Paper Submission Guidelines
                 </h1>
                 <p className="text-lg">
-                    If you are interested to submit your full paper for inclusion in the ICWiCom 2025 Book, you will need to follow the guidelines stated below:
+                    If you are interested to submit your full paper for inclusion in the ICWiCOM 2025 Book, you will need to follow the guidelines stated below:
                 </p>
                 <ul className="list-disc pl-5 text-lg">
                     {guidelines.map((item, index) => (
@@ -57,8 +57,8 @@ function page() {
             </div>
             <br />
             <div className="flex gap-3 flex-col text-lg">
-                <h1>Template for Full Paper: <Link className="text-blue-400" href={""}>Full paper Template</Link></h1>
-                <h1>Formatting for Full Paper is available: <Link className="text-blue-400" href={""}>manuscript-guidelines-1.0</Link> & <Link className="text-blue-400" href={ ""}>Key_Style_Points_1.0.</Link></h1>
+                <h1>Template for Full Paper: <Link className="text-blue-500" href={"/splnproc1703_mac.docm"}>Full paper Template</Link></h1>
+                <h1>Formatting for Full Paper is available: <Link className="text-blue-500" target="blank" href={"/ManuscriptguidelinesforEnglishbooks.pdf"}>manuscript-guidelines-1.0</Link> & <Link className="text-blue-500" target="blank" href={ "/Keystylepoints.pdf"}>Key_Style_Points_1.0.</Link></h1>
             </div>
             <br />
             <div className="py-5 text-3xl font-semibold flex sm:flex-row flex-col justify-center gap-4">
@@ -68,6 +68,10 @@ function page() {
                 <Link href={"https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICWiCOM2025"} target="blank">
                     <Button>Submit</Button>
                 </Link>
+            </div>
+
+            <div className="text-xl">
+                The Official Brochure of ICWiCOM 2025 is available: <Link className="text-blue-500" href={"/ICWiCOM 2025.pdf"} target="blank">Brochure</Link>
             </div>
 
         </div>
