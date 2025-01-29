@@ -177,7 +177,7 @@ export function Navbar() {
                   </Button>
 
                   <Button variant="link">
-                    <Link href="/ICWiCOM 2025.pdf" target="_blank">Call for Papers</Link>
+                    <Link href="/call_for_papers" >Call for Papers</Link>
                   </Button>
                   <Button variant="link">
                     <Link href="/dates">Dates</Link>
