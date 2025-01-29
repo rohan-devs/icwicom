@@ -62,10 +62,10 @@ function page() {
             </div>
             <br />
             <p className="text-lg">
-                You can log in <b>Microsoft's Conference Management Toolkit</b> using your Username and Password. From the top menu that appears below <b>Author Console</b> Click "Create new submission" and choose the Track to submit the paper. Finally you fill out all the necessary information concerning the submission, upload the paper and click on "submit".
+                You can log in <span className="font-semibold">Microsoft's Conference Management Toolkit</span> using your Username and Password. From the top menu that appears below <span className="font-semibold">Author Console</span> Click "Create new submission" and choose the Track to submit the paper. Finally you fill out all the necessary information concerning the submission, upload the paper and click on "submit".
             </p>
+
             <div className="py-5 text-2xl font-semibold flex sm:flex-row flex-col justify-center gap-4">
-                
                 <h1>
                     Submit your papers here:
                 </h1>
