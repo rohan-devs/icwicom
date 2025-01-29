@@ -134,7 +134,6 @@ export function Navbar() {
                   <NavigationMenuContent>
                     <ul className=" w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[900px]  ">
                       <Link href="keynotespeakers">
-
                         <ListItem>Keynote Speakers</ListItem>
                       </Link>
                       <Link href="plenary">
