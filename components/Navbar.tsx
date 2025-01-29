@@ -56,7 +56,7 @@ export function Navbar() {
   return (
     <>
       <motion.div
-      className=" flex bg-background w-full fixed top-0 z-10  "
+        className=" flex bg-background w-full fixed top-0 z-10  "
         variants={{
           visble: { y: 0 },
           hidden: { y: "-100%" },
@@ -79,10 +79,10 @@ export function Navbar() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <Link href="/ICWiCOM 2025.pdf" target="_blank"  passHref>
+                  <Link href="/call_for_papers" passHref>
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
-                      >
+                    >
                       Call for papers
                     </NavigationMenuLink>
 
@@ -112,7 +112,7 @@ export function Navbar() {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>
-         Committees
+                    Committees
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className=" w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[900px]  ">
@@ -123,8 +123,8 @@ export function Navbar() {
                         <ListItem>Technical Program Committee</ListItem>
                       </Link>
                       <Link href="/oc">
-                      
-                      <ListItem>Organizing Committee</ListItem>
+
+                        <ListItem>Organizing Committee</ListItem>
                       </Link>
                     </ul>
                   </NavigationMenuContent>
@@ -134,12 +134,12 @@ export function Navbar() {
                   <NavigationMenuContent>
                     <ul className=" w-[400px] gap-3 p-4 md:w-[500px]  lg:w-[900px]  ">
                       <Link href="keynotespeakers">
-                      
-                      <ListItem>Keynote Speakers</ListItem>
+
+                        <ListItem>Keynote Speakers</ListItem>
                       </Link>
                       <Link href="plenary">
-                      
-                      <ListItem>Plenary</ListItem>
+
+                        <ListItem>Plenary</ListItem>
                       </Link>
                     </ul>
                   </NavigationMenuContent>
@@ -175,7 +175,7 @@ export function Navbar() {
                   <Button variant="link">
                     <Link href="/">Home</Link>
                   </Button>
-                
+
                   <Button variant="link">
                     <Link href="/ICWiCOM 2025.pdf" target="_blank">Call for Papers</Link>
                   </Button>

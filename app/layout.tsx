@@ -8,6 +8,7 @@ import { Separator } from "@/components/ui/separator";
 import { Roboto } from "next/font/google";
 import { ReactNode } from "react";
 import Footer from "@/components/Footer";
+import Credits from "@/components/Credits";
 const font = Roboto({
   subsets: ["latin-ext"],
   weight: ['400'],
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <div className=" my-[10vh]"></div>
 
             {children}
+            <Credits/>
             <Separator className="my-[10vh]" />
             <Footer />
           </div>
