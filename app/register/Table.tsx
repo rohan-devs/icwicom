@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Table({ heading, topics }: TopicProps) {
+export function TypeTable({ heading, topics }: ParticipantsProps) {
     return (
         <div className="overflow-x-auto">
             <table className="min-w-full border border-gray-300 rounded-lg shadow-md">
@@ -29,9 +29,9 @@ function Table({ heading, topics }: TopicProps) {
     )
 }
 
-export default Table;
 
-interface TopicProps {
+
+interface ParticipantsProps {
     topics: dataType[],
     heading: string[]
 }
@@ -41,3 +41,31 @@ interface dataType {
     type: string,
     amount: string,
 }
+
+
+export function PaymentTable({ queries }: payment) {
+    return (
+        <div className="overflow-x-auto">
+            <table className="min-w-full border border-gray-300 rounded-lg shadow-md">
+                {queries.map((query) => (
+                    <tr className="  border-b border-gray-300" key={query.id}>
+                        <th className='px-6 py-3 border-r border-gray-300 text-left text-white bg-gray-800' >{query.query}</th>
+                        <td className='px-6 py-3 border-r border-gray-300 '>{query.ans}</td>
+                    </tr>
+                ))}
+            </table>
+        </div>
+    )
+};
+
+interface payment {
+    queries: paymentProps[]
+}
+
+interface paymentProps {
+    id: number,
+    query: string,
+    ans: string,
+};
+
+
