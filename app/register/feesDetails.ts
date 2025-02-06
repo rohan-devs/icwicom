@@ -21,12 +21,12 @@ export const Fees:feesType[] = [
     },
     {
         id: 5,
-        type: 'Academians/Industries Delegates',
+        type: 'Attendees(Academia / Industry)',
         amount:'INR 5000 / USD 57'
     },
     {
         id: 6,
-        type: 'Students Delegates',
+        type: 'Attendees (Students)',
         amount:'INR 4000 / USD 46'
     }
 
