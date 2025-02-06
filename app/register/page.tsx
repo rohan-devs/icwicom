@@ -20,7 +20,7 @@ function page() {
           <div>
             <TypeTable topics={Fees} heading={['Registration Type','Registration Charges']}/>
           </div>
-          <h1 className='text-lg'>Note: Conference registration includes all conference activities, registration kit, two working lunches and refreshments.</h1>
+          <h1 className='text-md py-2'><i>Note: Conference registration includes all conference activities, registration kit, two working lunches and refreshments.</i></h1>
           <br />
           <div className='flex flex-col gap-7'>
             <PaymentTable queries={queries} />
