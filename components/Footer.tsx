@@ -25,7 +25,7 @@ function Footer() {
           <ul>
             Email:{" "}
             <Link href="mailTo:djextcicwicom@gmail.com">
-              icwicom2025@gmail.com
+              icwicom102025@gmail.com.com
             </Link>
           </ul>
           <ul>Working Hours:9am-5pm</ul>
