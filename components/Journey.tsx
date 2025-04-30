@@ -26,7 +26,7 @@ function Journey() {
           </CardHeader>
           <CardContent>
             <div className=" grid  gap-1 grid-cols-1 m-3">
-              <div className=" flex  text-xl flex-col">
+              <div className=" flex  text-xl flex-col w-full">
                 ICWiCOM is being organised with a view to cultivate research
                 activities in the field of Wireless Communication at our
                 institute. The conference will bring in eminent personalities
@@ -52,12 +52,7 @@ function Journey() {
                   </Link>
                 </div>
                 <br />
-                {/* <div>
-                  For Paper submission through Easy Chair for ICWiCOM 2025: <Link
-                    href={"https://easychair.org/account2/signin?l=5399684799226378634"}
-                    target="blank"
-                  >Tap here.</Link>
-                </div> */}
+                
               </div>
             </div>
           </CardContent>

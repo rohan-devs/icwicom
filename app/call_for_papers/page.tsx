@@ -39,7 +39,7 @@ function page() {
                 <Table heading={"Signal Processing"} topics={SignalProcessing} />
 
             </div>
-            {/* add all of the templates here */}
+            
             <br />
             <div className="flex flex-col gap-4">
                 <h1 className="text-2xl font-semibold">
