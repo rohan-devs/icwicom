@@ -21,7 +21,7 @@ function page() {
             </h1>
             <div className="flex items-start justify-center flex-col gap-2 text-lg">
                 <div>
-                    Paper Submission deadline: 1<sup>st</sup> May, 2025
+                Paper Submission deadline: <span style={{textDecoration:"line-through"}}>1</span><sup>st</sup><span style={{textDecoration:"line-through"}}> May, 2025</span> 20<sup>th</sup> May, 2025
                 </div>
                 <div>
                     Acceptance Notification: 30<sup>th</sup> June, 2025
