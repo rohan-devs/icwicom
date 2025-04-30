@@ -14,7 +14,7 @@ function page() {
             <div className='w-full'>
               <div className="overflow-hidden whitespace-nowrap">
                 <div className="inline-block animate-marquee">
-                  The Paper Submission Deadlines are extended till 20<sup>th</sup> May, 2025.
+                  The Paper Submission Deadline is extended till 20<sup>th</sup> May, 2025.
                 </div>
               </div>
             </div>

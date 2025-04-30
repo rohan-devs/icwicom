@@ -27,7 +27,7 @@ function Hero() {
           </div>
           <div className="overflow-hidden whitespace-nowrap text-2xl text-black">
                   <div className="inline-block animate-marquee">
-                    The Paper Submission Deadlines are extended till 20<sup>th</sup> May, 2025.
+                    The Paper Submission Deadline is extended till 20<sup>th</sup> May, 2025.
                   </div>
                 </div>
         </motion.div>
