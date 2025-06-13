@@ -25,12 +25,10 @@ function page() {
           </div>
         </div>
         <div>
-          Acceptance Notification: 30<sup>th</sup> June, 2025
+          Acceptance Notification: <span style={{ textDecoration: "line-through" }}>30</span><sup>th</sup><span style={{ textDecoration: "line-through" }}> June, 2025</span> 10<sup>th</sup> July, 2025
         </div>
         <div>
-
-
-          Registration/Camera Ready Submission: 15<sup>th</sup> July, 2025
+          Registration/Camera Ready Submission: <span style={{ textDecoration: "line-through" }}>15</span><sup>th</sup><span style={{ textDecoration: "line-through" }}> July, 2025</span> 20<sup>th</sup> July, 2025
         </div>
 
       </div>
