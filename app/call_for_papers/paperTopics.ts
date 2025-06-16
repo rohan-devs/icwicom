@@ -144,4 +144,4 @@ export const guidelines: string[] = [
     "Each article must consist of the following: Author Name, Affiliation and Email address, Chapter Abstracts and Keywords",
     "All tables, figures, pictures should be accompanied with captions and numbers",
     "References should be placed at the end of individual chapters",
-    "Page limit is 10 pages"]
+    "Page limit - minimum 10 page paper length"]
