@@ -2,7 +2,8 @@ import React from 'react'
 import { PaymentTable, TypeTable } from './Table';
 import { Fees } from './feesDetails'
 
-function page() {
+function page()
+{
   return (
     <>
       <div className='w-3/4 mx-auto py-8 flex flex-col gap-7 '>
@@ -18,31 +19,34 @@ function page() {
           </ul>
           <br />
           <div>
-            <TypeTable topics={Fees} heading={['Registration Type','Registration Charges']}/>
+            <TypeTable topics={Fees} heading={['Registration Type', 'Registration Charges']} />
           </div>
           <h1 className='text-md py-2'><i>Note: Conference registration includes all conference activities, registration kit, two working lunches and refreshments.</i></h1>
           <br />
           <div className='flex flex-col gap-7'>
             <PaymentTable queries={queries} />
-            <h1 className='text-lg font-bold'>Payment Mode: (NEFT, WIRE): </h1>
-            <ul className='list-decimal'>
-              <li >National Electronic Funds Transfer (NEFT)
+            <h1 className='text-lg font-bold'>Payment Mode: (NEFT, WIRE, UPI): </h1>
+            <ul className='list-decimal flex flex-col gap-3 text-lg'>
+              <li >National Electronic Funds Transfer (NEFT), WIRE:
                 <ul className='list-disc'>
                   <li className='pl-5'>The Online Transactions should be made through NEFT with above Account Details. (Please make a note of the transaction number.)
                   </li>
                 </ul>
               </li>
-              <li>WIRE Transfer.</li>
+              <li>
+                <div>Scan the QR Code for UPI Payment: </div>
+                <div className=''><img className='flex items-start justify-start h-[400px] w-auto' src="/qrcode.jpeg" alt="QR Code" /></div>
+              </li>
             </ul>
           </div>
 
           <div className='py-4 flex flex-col gap-3 text-lg'>
-            <h1>Link for registration (After Payment): <span className='underline hover:cursor-pointer'> Click Here</span></h1>
-            <h1>Link for Participants/Co-author Registration (After Payment): <span className='underline hover:cursor-pointer'> Click Here</span> </h1>
+            {/* <h1>Link for registration (After Payment): <span className='underline hover:cursor-pointer'><a href="/Registration_ICWICOM 2025.docx">Click Here</a></span></h1> */}
+            {/* <h1>Link for Participants/Co-author Registration (After Payment): <span className='underline hover:cursor-pointer'> Click Here</span> </h1> */}
           </div>
         </div>
-</div>
-    
+      </div>
+
     </>
   )
 }
@@ -51,17 +55,18 @@ export default page;
 
 
 
-interface paymentProps {
+interface paymentProps
+{
   id: number,
   query: string,
   ans: string,
 };
-const queries:paymentProps[] = [
+const queries: paymentProps[] = [
   {
     id: 1,
     query: "Account Name",
-    ans:"ICWICOM DJSCE"
-    
+    ans: "ICWICOM DJSCE"
+
   },
   {
     id: 2,
@@ -77,16 +82,16 @@ const queries:paymentProps[] = [
   {
     id: 4,
     query: "Branch Name",
-    ans:"Juhu, Vile Parle, Mumbai - 400056",
+    ans: "Juhu, Vile Parle, Mumbai - 400056",
   },
   {
     id: 5,
     query: "IFSC Code",
-    ans:"CBIN0281621"
+    ans: "CBIN0281621"
   }, {
     id: 6,
     query: "Account Type",
-    ans:"Current"
+    ans: "Current"
   },
-  
+
 ]
