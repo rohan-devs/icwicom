@@ -58,7 +58,7 @@ function page() {
             <br />
             <div className="flex gap-3 flex-col text-lg">
                 <h1>Template for Full Paper: <Link className="text-blue-500" href={"/splnproc1703_mac.docm"}>Full paper Template</Link></h1>
-                <h1>Registration Form: <Link className="text-blue-500" href={"/Registration_ICWICOM 2025.docx"}>Click Here</Link></h1>
+                <h1>Registration Form: <Link className="text-blue-500" href={"/Registration_ICWICOM.docx"}>Click Here</Link></h1>
                 <h1>Consent_To_Publish_CTP: <Link className="text-blue-500" href={"/CTP_ICWicom_2025.docx"}>Click Here</Link></h1>
 
                 <h1>Formatting for Full Paper is available: <Link className="text-blue-500" target="blank" href={"/ManuscriptguidelinesforEnglishbooks.pdf"}>manuscript-guidelines-1.0</Link> & <Link className="text-blue-500" target="blank" href={ "/Keystylepoints.pdf"}>Key_Style_Points_1.0.</Link></h1>
