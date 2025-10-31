@@ -1,10 +1,12 @@
-'use client';
-
 import React from "react";
 import Link from "next/link";
 import {
   Card,
   CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
 } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
