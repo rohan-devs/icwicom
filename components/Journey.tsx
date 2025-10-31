@@ -52,7 +52,7 @@ function Journey() {
                     <span className="ml-2 text-xs bg-red-500 text-white px-2 py-0.5 rounded animate-pulse">
                       New
                     </span>
-                  </Link> 
+                  </Link>
                 </div>
                 <br />
                 
@@ -65,4 +65,6 @@ function Journey() {
   );
 }
 
-export default Journey;
+export default Journey
+
+
